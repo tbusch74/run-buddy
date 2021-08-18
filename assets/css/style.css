@@ -51,17 +51,18 @@ footer {
 background: #fce138;
 width: 100%;
 padding: 40px 35px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
 }
 
 footer h2 {
-    display: inline;
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 
 footer div {
-    float: right;
     line-height: 1.5;
     text-align: right;
 }
@@ -78,8 +79,9 @@ section {
     background-image: url("../images/flipped-hero-image.jpg");
     background-size: cover;
     background-position: center;
-    height: 600px;
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hero-form {
@@ -90,9 +92,11 @@ section {
     border-style: solid;
     border-width: 3px;
     border-color: #024e76;
-    position: absolute;
+    /* position: absolute;
     bottom: 120px;
-    right: 140px;
+    right: 140px; */
+    width: 40%;
+    margin: 3.5%;
 }
 
 .hero-form h3 {
@@ -102,6 +106,25 @@ section {
 
 .hero-form p {
     margin: 5px 0 15px 0;
+}
+
+.hero-cta {
+width: 35%;
+text-align: right;
+margin: 3.5%;
+color: #fff;
+font-size: 18px;
+line-height: 1.3;
+}
+
+.hero-cta h2 {
+    color: #fce138;
+    font-style: italic;
+    font-size: 55px;
+}
+
+.hero-cta p {
+    color: white;
 }
 
 .form-input {
